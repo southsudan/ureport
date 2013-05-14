@@ -1,0 +1,14 @@
+.project
+.pydevproject
+.settings
+*pyc
+localsettings.py
+*~
+build
+dist
+ureport.egg-info
+.idea
+target
+binary
+.coverage
+.DS_Store
