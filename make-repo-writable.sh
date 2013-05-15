@@ -9,7 +9,7 @@ function make.submodule.writeable() {
     cd ${install_path}
     
     echo "in [`pwd`] ..."
-    git remote remove origin
+    git remote rm origin
     git remote add origin ${repo}
 
     cd -
@@ -17,8 +17,7 @@ function make.submodule.writeable() {
 }
 
 function make.submodules.writeable() {
-    local branch=$1
-    echo -e "\nInstalling the submodules on branch [${branch}] now...\n"
+    echo -e "\nMaking submodules writeable now...\n"
 
     make.submodule.writeable "git@github.com:unicefuganda/django-eav.git" "${branch}" "ureport_project/django_eav"
     make.submodule.writeable "git@github.com:unicefuganda/django-taggit.git" "${branch}" "ureport_project/django_taggit"
