@@ -1,0 +1,8 @@
+0=Welcome to U-report!, U-report is a FREE service that helps youth speak out on issues in their communities using SMS. SPEAK UP and BE HEARD! 
+1=Now we are going to ask a few questions to finish your registration as a U-reporter. Please reply with the name of your PAYAM
+2=Ureport is a FREE SMS text message system that is sent to your phone.  Ureport is sponsored by UNICEF and other partners.
+3=Its important to know which District you'll be reporting on so we can work together to try & resolve issues in your community!Reply ONLY with your district.
+4=Ureport gives you a chance to speak out on issues in your community & share opinions with youth around Uganda!Best responses&results shared through the media!
+5=Best responses may be shared!Send us your name,or if you prefer a nickname so we can give u recognition for good replies by sharing them in the media!
+6=What is your AGE? Please reply with only the number
+7=Are you male or female?  Type F for female, and M for Male
