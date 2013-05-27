@@ -12,6 +12,9 @@ CURRENT_DIR=`pwd`
 echo "Linking ${CURRENT_DIR} to /usr/local/var/www/ureport ..."
 ln -s "${CURRENT_DIR}" /usr/local/var/www/ureport
 
+#Link django-admin files
+ln -s "${UREPORT_VIRTUAL_ENV_HOME}/lib/python2.7/site-packages/django/contrib/admin/media" "${CURRENT_DIR}/ureport_project/media" 
+
 echo "Reloading nginx"
 
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
