@@ -1,7 +1,5 @@
 # Ureport
 
-# Some random change to see if we can trigger south sudan pipeline
-
 Ureport is a user-centered social monitoring tool designed to strengthen community-led development and citizen engagement. It allows users to speak out on what is happening in their community and feeds back useful information to assist users to enact change in your community.
 
 Technically speaking, Ureport leverages the work of rapidsms-polls  to provide an easy system for polling a large number of users, and adds a visualization layer to aggregate poll results exposed in as JSON in the polling app.
@@ -21,11 +19,11 @@ Before you start, find a good place to put all the code. The team tends to do so
     mkdir ~/code/ureport/south_sudan
     cd ~/code/ureport/south_sudan
 
-First clone this repository. Because eveything is called "ureport" we tend to clone it with the name of "master-repo", but whatever you are comfortable with
+First clone this repository:
 
-    git clone git@github.com:southsudan/ureport.git master-repo
+    git clone git@github.com:southsudan/ureport.git
     
-    cd master-repo
+    cd ureport 
     
 At this point you won't have the submodules initialised, some
 
@@ -47,7 +45,7 @@ For each submodule you should see something like:
 
 Where `<*****>` is the name of the submodule
 
-Ok you now have a working codebase hopefully.
+Ok you now have a working codebase, hopefully.
 
 ## TODO - Initialise the database
 ## TODO - Run the server and celery
@@ -57,7 +55,7 @@ Ok you now have a working codebase hopefully.
 
 So now you have a working local environment and your ready for your first commit!
 
-Because we want the code to be publically cloneable, all of the submodules are configured to point to readonly GIT urls, for example
+Because we want the code to be publically cloneable, all of the submodules are configured to point to readonly git urls, for example:
 
     git://github.com/unicefuganda/rapidsms-ureport.git
     
@@ -73,7 +71,7 @@ To do this, we need to replace the `origin` for each submodule with the ssh vers
     
 It will double check with you.
 
-You can verify this by doing
+You can verify this by doing:
 
     git submodule foreach git remote -v
 
@@ -82,15 +80,13 @@ Each one should look like this:
     origin	git@github.com:unicefuganda/rapidsms-xforms.git (fetch)
     origin	git@github.com:unicefuganda/rapidsms-xforms.git (push)
 
-It is vital that when you are pushing to one of the submodules you double check that you are on the south_sudan branch
+It is vital that when you are pushing to one of the submodules you double check that you are on the south_sudan branch:
 
     git branch
     
-It should say
+It should say:
 
       master
     * south_sudan
 
-HEALTH WARNING!!! If you push south_sudan specific changes to the `master` you will overwrite the ureport.ug website!
-
-
+HEALTH WARNING!!! If you push south_sudan specific changes to a master branch of a submodule, your changes will show up on ureport.ug next time someone updates the submodules in the Uganda repository!
