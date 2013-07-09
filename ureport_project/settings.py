@@ -46,11 +46,10 @@ OPT_IN_CONFIRMATION = "Welcome to U-Report! U-report is a community of South Sud
 OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki']
 OPT_OUT_CONFIRMATION = "Your U-Report opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 6262! All SMS messages are free"
 
-# map bounding box
-MIN_LON = '29.55322265625'
-MAX_LON = '33.92578125'
-MIN_LAT = '-1.0326589311777759'
-MAX_LAT = '4.280680030820496'
+MAP_BOUNDS = {'bottom_left': {'lon': 22.9224, 'lat': 3.0545},
+              'top_right': {'lon': 36.3033, 'lat': 12.6503}
+              }
+
 # map categorized color pallete
 CATEGORY_COLORS = ['#AA4643', '#4572A7', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92']
 
